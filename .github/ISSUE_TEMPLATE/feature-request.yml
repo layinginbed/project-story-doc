@@ -1,0 +1,46 @@
+name: Feature request
+description: Propose a general improvement to the Skill workflow.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: General problem
+      description: Describe the documentation failure class, not only one private case.
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Public or synthetic example
+      description: Show a representative request and expected output boundary.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-gap
+    attributes:
+      label: Why the current Skill is insufficient
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-behavior
+    attributes:
+      label: Proposed behavior
+      description: State the smallest reusable rule or workflow change.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: This proposal applies beyond one private project or document.
+          required: true
+        - label: The example contains no private or sensitive material.
+          required: true

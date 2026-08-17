@@ -1,0 +1,72 @@
+name: Bug report
+description: Report incorrect, unsafe, or inconsistent Skill behavior.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include private source, credentials, personal data, or sensitive traces.
+
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Operating mode
+      options:
+        - Create
+        - Refresh
+        - Deep dive
+        - Organize history
+        - Not sure
+    validations:
+      required: true
+
+  - type: dropdown
+    id: route
+    attributes:
+      label: Artifact route
+      options:
+        - Project
+        - Repository
+        - Paper
+        - Paper plus code
+        - Mixed or not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: Sanitized request
+      description: Provide the smallest public or synthetic prompt that reproduces the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Public evidence or validation
+      description: Link public sources or describe a synthetic test. Do not paste private artifacts.
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, personal data, private source, and sensitive traces.
+          required: true
