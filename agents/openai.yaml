@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目与研究认知文档"
+  short_description: "创建、刷新并整理有证据支撑的项目、仓库与论文认知文档"
+  default_prompt: "Use $project-story-doc to create, refresh, deep-dive, audit, or organize a durable evidence-grounded explanation document for this project, repository, paper, or paper-plus-code artifact."
